@@ -1,40 +1,45 @@
+from functools import partial
+
+from readchar import config
+from lib.utils import make_request
+from lib.utils import load_configs
 import json
 import tkinter as tk
-from tkinter import scrolledtext
-from tkinter import font
-from functools import partial
-from http_requester import make_request
+from types import SimpleNamespace
 
-CONFIG_FILE = 'config.json'
+# CONFIG_FILE = 'config.json'
 
-def load_leagues():
-    with open(CONFIG_FILE, 'r') as f:
-        config = json.load(f)
-    return config.get('leagues', {})
+# def load_leagues():
+#     with open(CONFIG_FILE, 'r') as f:
+#         config = json.load(f)
+#     return config.get('leagues', {})
 
-def load_descriptions():
-    with open('setting_descriptions.json', 'r') as f:
-        setting_desc = json.load(f)
-    with open('scoring_descriptions.json', 'r') as f:
-        scoring_desc = json.load(f)
-    return setting_desc, scoring_desc
+# def load_descriptions():
+#     with open('setting_descriptions.json', 'r') as f:
+#         setting_desc = json.load(f)
+#     with open('scoring_descriptions.json', 'r') as f:
+#         scoring_desc = json.load(f)
+#     return setting_desc, scoring_desc
 
-def on_league_click(league_name, url):
-    result = make_request(url)
-    setting_desc, scoring_desc = load_descriptions()
+def on_league_click(result, config):
+    url = result.get('url')
+    league_data = json.loads(json.dumps(result.get('json', {})), object_hook=lambda d: SimpleNamespace(**d))  # Convert to SimpleNamespace for easier attribute access
+    # Pull setting_desc and scoring_desc from config
+    setting_desc = config.setting_descriptions
+    scoring_desc = config.scoring_descriptions
     popup = tk.Toplevel()
-    popup.title(league_name)
+    popup.title(league_data.name)
     popup.geometry('500x500')
     popup.resizable(False, False)
-    settings = result.get('json', {}).get('settings', {})
-    scoring_settings = result.get('json', {}).get('scoring_settings', {})
+    settings = league_data.settings
+    scoring_settings = league_data.scoring_settings
     # Track edits for this league
     updated_settings = dict(settings)
     updated_scoring = dict(scoring_settings)
     settings_items = list(settings.items()) if settings else []
     scoring_items = list(scoring_settings.items()) if scoring_settings else []
     current_index = {'idx': 0, 'mode': 'settings'}
-    info_label = tk.Label(popup, text=f"{league_name}\nURL: {url}\nStatus: {result['status_code']}", anchor='w', justify='left')
+    info_label = tk.Label(popup, text=f"{league_data.name}\nURL: {url}\nStatus: {result['status_code']}", anchor='w', justify='left')
     info_label.pack(padx=10, pady=10)
     # Full Name (bold, underlined) and value (editable)
     full_name_var = tk.StringVar()
@@ -63,11 +68,11 @@ def on_league_click(league_name, url):
             updated_scoring[key] = value_var.get()
         # Save to file
         output = {
-            'league': league_name,
+            'league': league_data.name,
             'settings': updated_settings,
             'scoring_settings': updated_scoring
         }
-        with open(f'{league_name.replace(" ", "_").lower()}_updates.json', 'w') as f:
+        with open(f'{league_data.name.replace(" ", "_").lower()}_updates.json', 'w') as f:
             json.dump(output, f, indent=2)
     def show_setting():
         if current_index['mode'] == 'settings':
@@ -136,7 +141,7 @@ def on_league_click(league_name, url):
         show_setting()
     def show_raw_data():
         raw_popup = tk.Toplevel(popup)
-        raw_popup.title(f"Raw Data - {league_name}")
+        raw_popup.title(f"Raw Data - {league_data.name}")
         raw_popup.geometry('700x500')
         raw_popup.resizable(True, True)
         text_widget = tk.Text(raw_popup, wrap=tk.WORD)
@@ -180,13 +185,21 @@ def on_league_click(league_name, url):
     show_setting()
 
 def main():
-    leagues = load_leagues()
+    config = load_configs()
+    leagues = config.leagues
     root = tk.Tk()
     root.title("Leagues")
-    for league_name, url in leagues.items():
-        title_label = 'Review {}'.format(league_name)
-        btn = tk.Button(root, text=title_label, width=30, command=partial(on_league_click, title_label, url))
-        btn.pack(pady=5)
+    for url in leagues:
+        try:
+            result = make_request(url)
+            league_name = result.get('json', {}).get('name')
+            title_label = 'Review {}'.format(league_name)
+            btn = tk.Button(root, text=title_label, width=30, command=partial(lambda: on_league_click(result, config)))
+            btn.pack(pady=5)
+        except Exception as e:
+            print(f"Error fetching {url}: {e}")
+            continue
+
     root.mainloop()
 
 if __name__ == '__main__':
