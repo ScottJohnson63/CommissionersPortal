@@ -1,57 +1,222 @@
 {
-  "pass_yd": {"full_name": "Passing Yards", "description": "Points per passing yard."},
-  "pass_td": {"full_name": "Passing Touchdowns", "description": "Points per passing touchdown."},
-  "rush_yd": {"full_name": "Rushing Yards", "description": "Points per rushing yard."},
-  "rush_td": {"full_name": "Rushing Touchdowns", "description": "Points per rushing touchdown."},
-  "rec_yd": {"full_name": "Receiving Yards", "description": "Points per receiving yard."},
-  "sack": {"full_name": "Sack", "description": "<add a description>"},
-  "fgm_40_49": {"full_name": "FGM 40 49", "description": "<add a description>"},
-  "bonus_rec_te": {"full_name": "Bonus Rec TE", "description": "<add a description>"},
-  "pass_int": {"full_name": "Pass INT", "description": "<add a description>"},
-  "fgmiss_50p": {"full_name": "FGMiss 50p", "description": "<add a description>"},
-  "pts_allow_0": {"full_name": "PTS Allow 0", "description": "<add a description>"},
-  "pass_2pt": {"full_name": "Pass 2PT", "description": "<add a description>"},
-  "yds_allow_450_499": {"full_name": "YDS Allow 450 499", "description": "<add a description>"},
-  "st_td": {"full_name": "ST TD", "description": "<add a description>"},
-  "rec_td": {"full_name": "REC TD", "description": "<add a description>"},
-  "fgm_30_39": {"full_name": "FGM 30 39", "description": "<add a description>"},
-  "xpmiss": {"full_name": "XPMiss", "description": "<add a description>"},
-  "yds_allow_550p": {"full_name": "YDS Allow 550p", "description": "<add a description>"},
-  "rec_2pt": {"full_name": "REC 2PT", "description": "<add a description>"},
-  "pass_int_td": {"full_name": "Pass INT TD", "description": "<add a description>"},
-  "st_fum_rec": {"full_name": "ST Fum Rec", "description": "<add a description>"},
-  "fgmiss": {"full_name": "FGMiss", "description": "<add a description>"},
-  "ff": {"full_name": "FF", "description": "<add a description>"},
-  "fgmiss_30_39": {"full_name": "FGMiss 30 39", "description": "<add a description>"},
-  "rec": {"full_name": "REC", "description": "<add a description>"},
-  "pts_allow_14_20": {"full_name": "PTS Allow 14 20", "description": "<add a description>"},
-  "fgm_0_19": {"full_name": "FGM 0 19", "description": "<add a description>"},
-  "int": {"full_name": "INT", "description": "<add a description>"},
-  "def_st_fum_rec": {"full_name": "DEF ST Fum Rec", "description": "<add a description>"},
-  "fum_lost": {"full_name": "Fum Lost", "description": "<add a description>"},
-  "pts_allow_1_6": {"full_name": "PTS Allow 1 6", "description": "<add a description>"},
-  "fgmiss_20_29": {"full_name": "FGMiss 20 29", "description": "<add a description>"},
-  "rush_att": {"full_name": "Rush Att", "description": "<add a description>"},
-  "fgm_20_29": {"full_name": "FGM 20 29", "description": "<add a description>"},
-  "yds_allow_500_549": {"full_name": "YDS Allow 500 549", "description": "<add a description>"},
-  "pts_allow_21_27": {"full_name": "PTS Allow 21 27", "description": "<add a description>"},
-  "xpm": {"full_name": "XPM", "description": "<add a description>"},
-  "fgmiss_0_19": {"full_name": "FGMiss 0 19", "description": "<add a description>"},
-  "rush_2pt": {"full_name": "Rush 2PT", "description": "<add a description>"},
-  "fum_rec": {"full_name": "Fum Rec", "description": "<add a description>"},
-  "def_st_td": {"full_name": "DEF ST TD", "description": "<add a description>"},
-  "fgm_50p": {"full_name": "FGM 50p", "description": "<add a description>"},
-  "def_td": {"full_name": "DEF TD", "description": "<add a description>"},
-  "safe": {"full_name": "Safe", "description": "<add a description>"},
-  "fgmiss_40_49": {"full_name": "FGMiss 40 49", "description": "<add a description>"},
-  "blk_kick": {"full_name": "BLK Kick", "description": "<add a description>"},
-  "yds_allow_100_199": {"full_name": "YDS Allow 100 199", "description": "<add a description>"},
-  "yds_allow_0_100": {"full_name": "YDS Allow 0 100", "description": "<add a description>"},
-  "fum": {"full_name": "Fum", "description": "<add a description>"},
-  "pts_allow_28_34": {"full_name": "PTS Allow 28 34", "description": "<add a description>"},
-  "pts_allow_35p": {"full_name": "PTS Allow 35p", "description": "<add a description>"},
-  "fum_rec_td": {"full_name": "Fum Rec TD", "description": "<add a description>"},
-  "def_st_ff": {"full_name": "DEF ST FF", "description": "<add a description>"},
-  "pts_allow_7_13": {"full_name": "PTS Allow 7 13", "description": "<add a description>"},
-  "st_ff": {"full_name": "ST FF", "description": "<add a description>"}
+  "pass_yd": {
+    "full_name": "Passing Yards",
+    "description": "Points per passing yard."
+  },
+  "pass_td": {
+    "full_name": "Passing Touchdowns",
+    "description": "Points per passing touchdown."
+  },
+  "rush_yd": {
+    "full_name": "Rushing Yards",
+    "description": "Points per rushing yard."
+  },
+  "rush_td": {
+    "full_name": "Rushing Touchdowns",
+    "description": "Points per rushing touchdown."
+  },
+  "rec_yd": {
+    "full_name": "Receiving Yards",
+    "description": "Points per receiving yard."
+  },
+  "sack": {
+    "full_name": "Sack",
+    "description": "<add a description>"
+  },
+  "fgm_40_49": {
+    "full_name": "FGM 40 49",
+    "description": "<add a description>"
+  },
+  "bonus_rec_te": {
+    "full_name": "Bonus Rec TE",
+    "description": "<add a description>"
+  },
+  "pass_int": {
+    "full_name": "Pass INT",
+    "description": "<add a description>"
+  },
+  "fgmiss_50p": {
+    "full_name": "FGMiss 50p",
+    "description": "<add a description>"
+  },
+  "pts_allow_0": {
+    "full_name": "PTS Allow 0",
+    "description": "<add a description>"
+  },
+  "pass_2pt": {
+    "full_name": "Pass 2PT",
+    "description": "<add a description>"
+  },
+  "yds_allow_450_499": {
+    "full_name": "YDS Allow 450 499",
+    "description": "<add a description>"
+  },
+  "st_td": {
+    "full_name": "ST TD",
+    "description": "<add a description>"
+  },
+  "rec_td": {
+    "full_name": "REC TD",
+    "description": "<add a description>"
+  },
+  "fgm_30_39": {
+    "full_name": "FGM 30 39",
+    "description": "<add a description>"
+  },
+  "xpmiss": {
+    "full_name": "XPMiss",
+    "description": "<add a description>"
+  },
+  "yds_allow_550p": {
+    "full_name": "YDS Allow 550p",
+    "description": "<add a description>"
+  },
+  "rec_2pt": {
+    "full_name": "REC 2PT",
+    "description": "<add a description>"
+  },
+  "pass_int_td": {
+    "full_name": "Pass INT TD",
+    "description": "<add a description>"
+  },
+  "st_fum_rec": {
+    "full_name": "ST Fum Rec",
+    "description": "<add a description>"
+  },
+  "fgmiss": {
+    "full_name": "FGMiss",
+    "description": "<add a description>"
+  },
+  "ff": {
+    "full_name": "FF",
+    "description": "<add a description>"
+  },
+  "fgmiss_30_39": {
+    "full_name": "FGMiss 30 39",
+    "description": "<add a description>"
+  },
+  "rec": {
+    "full_name": "REC",
+    "description": "<add a description>"
+  },
+  "pts_allow_14_20": {
+    "full_name": "PTS Allow 14 20",
+    "description": "<add a description>"
+  },
+  "fgm_0_19": {
+    "full_name": "FGM 0 19",
+    "description": "<add a description>"
+  },
+  "int": {
+    "full_name": "INT",
+    "description": "<add a description>"
+  },
+  "def_st_fum_rec": {
+    "full_name": "DEF ST Fum Rec",
+    "description": "<add a description>"
+  },
+  "fum_lost": {
+    "full_name": "Fum Lost",
+    "description": "<add a description>"
+  },
+  "pts_allow_1_6": {
+    "full_name": "PTS Allow 1 6",
+    "description": "<add a description>"
+  },
+  "fgmiss_20_29": {
+    "full_name": "FGMiss 20 29",
+    "description": "<add a description>"
+  },
+  "rush_att": {
+    "full_name": "Rush Att",
+    "description": "<add a description>"
+  },
+  "fgm_20_29": {
+    "full_name": "FGM 20 29",
+    "description": "<add a description>"
+  },
+  "yds_allow_500_549": {
+    "full_name": "YDS Allow 500 549",
+    "description": "<add a description>"
+  },
+  "pts_allow_21_27": {
+    "full_name": "PTS Allow 21 27",
+    "description": "<add a description>"
+  },
+  "xpm": {
+    "full_name": "XPM",
+    "description": "<add a description>"
+  },
+  "fgmiss_0_19": {
+    "full_name": "FGMiss 0 19",
+    "description": "<add a description>"
+  },
+  "rush_2pt": {
+    "full_name": "Rush 2PT",
+    "description": "<add a description>"
+  },
+  "fum_rec": {
+    "full_name": "Fum Rec",
+    "description": "<add a description>"
+  },
+  "def_st_td": {
+    "full_name": "DEF ST TD",
+    "description": "<add a description>"
+  },
+  "fgm_50p": {
+    "full_name": "FGM 50p",
+    "description": "<add a description>"
+  },
+  "def_td": {
+    "full_name": "DEF TD",
+    "description": "<add a description>"
+  },
+  "safe": {
+    "full_name": "Safe",
+    "description": "<add a description>"
+  },
+  "fgmiss_40_49": {
+    "full_name": "FGMiss 40 49",
+    "description": "<add a description>"
+  },
+  "blk_kick": {
+    "full_name": "BLK Kick",
+    "description": "<add a description>"
+  },
+  "yds_allow_100_199": {
+    "full_name": "YDS Allow 100 199",
+    "description": "<add a description>"
+  },
+  "yds_allow_0_100": {
+    "full_name": "YDS Allow 0 100",
+    "description": "<add a description>"
+  },
+  "fum": {
+    "full_name": "Fum",
+    "description": "<add a description>"
+  },
+  "pts_allow_28_34": {
+    "full_name": "PTS Allow 28 34",
+    "description": "<add a description>"
+  },
+  "pts_allow_35p": {
+    "full_name": "PTS Allow 35p",
+    "description": "<add a description>"
+  },
+  "fum_rec_td": {
+    "full_name": "Fum Rec TD",
+    "description": "<add a description>"
+  },
+  "def_st_ff": {
+    "full_name": "DEF ST FF",
+    "description": "<add a description>"
+  },
+  "pts_allow_7_13": {
+    "full_name": "PTS Allow 7 13",
+    "description": "<add a description>"
+  },
+  "st_ff": {
+    "full_name": "ST FF",
+    "description": "<add a description>"
+  }
 }

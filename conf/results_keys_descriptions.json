@@ -1,0 +1,274 @@
+{
+  "name": {
+    "full_name": "League Name",
+    "description": "The name of the league."
+  },
+  "new_name": {
+    "full_name": "New League Name",
+    "description": "The new name of the league, if changed."
+  },
+  "status": {
+    "full_name": "Status",
+    "description": "The current status of the league data (e.g., complete, pending)."
+  },
+  "metadata": {
+    "full_name": "Metadata",
+    "description": "Additional information about the league, such as division names, avatars, and other settings.",
+    "keys": {
+      "auto_continue": {
+        "full_name": "Auto Continue",
+        "description": "Whether auto-continue is enabled."
+      },
+      "copy_from_league_id": {
+        "full_name": "Copy From League ID",
+        "description": "League ID from which this league was copied."
+      },
+      "division_1": {
+        "full_name": "Division 1 Name",
+        "description": "Name of the first division."
+      },
+      "division_1_avatar": {
+        "full_name": "Division 1 Avatar",
+        "description": "Avatar URL for the first division."
+      },
+      "division_2": {
+        "full_name": "Division 2 Name",
+        "description": "Name of the second division."
+      },
+      "division_2_avatar": {
+        "full_name": "Division 2 Avatar",
+        "description": "Avatar URL for the second division."
+      },
+      "keeper_deadline": {
+        "full_name": "Keeper Deadline",
+        "description": "Deadline for keepers."
+      },
+      "latest_league_winner_roster_id": {
+        "full_name": "Latest League Winner Roster ID",
+        "description": "Roster ID of the latest league winner."
+      }
+    }
+  },
+  "settings": {
+    "full_name": "Settings",
+    "description": "League configuration settings, such as roster, waivers, playoffs, and other rules.",
+    "keys": {
+      "best_ball": {"full_name": "Best Ball", "description": "Best ball league setting."},
+      "last_report": {"full_name": "Last Report", "description": "Last report number."},
+      "waiver_budget": {"full_name": "Waiver Budget", "description": "Waiver budget amount."},
+      "disable_adds": {"full_name": "Disable Adds", "description": "Whether adds are disabled."},
+      "divisions": {"full_name": "Divisions", "description": "Number of divisions."},
+      "capacity_override": {"full_name": "Capacity Override", "description": "Capacity override value."},
+      "waiver_bid_min": {"full_name": "Waiver Bid Min", "description": "Minimum waiver bid."},
+      "taxi_deadline": {"full_name": "Taxi Deadline", "description": "Taxi squad deadline."},
+      "draft_rounds": {"full_name": "Draft Rounds", "description": "Number of draft rounds."},
+      "reserve_allow_na": {"full_name": "Reserve Allow NA", "description": "Allow NA players on reserve."},
+      "start_week": {"full_name": "Start Week", "description": "Start week of the season."},
+      "playoff_seed_type": {"full_name": "Playoff Seed Type", "description": "Type of playoff seeding."},
+      "playoff_teams": {"full_name": "Playoff Teams", "description": "Number of playoff teams."},
+      "veto_votes_needed": {"full_name": "Veto Votes Needed", "description": "Votes needed to veto a trade."},
+      "squads": {"full_name": "Squads", "description": "Number of squads."},
+      "num_teams": {"full_name": "Num Teams", "description": "Number of teams in the league."},
+      "daily_waivers_hour": {"full_name": "Daily Waivers Hour", "description": "Hour for daily waivers."},
+      "playoff_type": {"full_name": "Playoff Type", "description": "Type of playoffs."},
+      "taxi_slots": {"full_name": "Taxi Slots", "description": "Number of taxi squad slots."},
+      "sub_start_time_eligibility": {"full_name": "Sub Start Time Eligibility", "description": "Eligibility for sub start time."},
+      "last_scored_leg": {"full_name": "Last Scored Leg", "description": "Last scored leg."},
+      "daily_waivers_days": {"full_name": "Daily Waivers Days", "description": "Number of daily waiver days."},
+      "playoff_week_start": {"full_name": "Playoff Week Start", "description": "Week playoffs start."},
+      "waiver_clear_days": {"full_name": "Waiver Clear Days", "description": "Days to clear waivers."},
+      "reserve_allow_doubtful": {"full_name": "Reserve Allow Doubtful", "description": "Allow doubtful players on reserve."},
+      "commissioner_direct_invite": {"full_name": "Commissioner Direct Invite", "description": "Commissioner direct invite setting."},
+      "veto_auto_poll": {"full_name": "Veto Auto Poll", "description": "Veto auto poll setting."},
+      "reserve_allow_dnr": {"full_name": "Reserve Allow DNR", "description": "Allow DNR on reserve."},
+      "taxi_allow_vets": {"full_name": "Taxi Allow Vets", "description": "Allow veterans on taxi squad."},
+      "waiver_day_of_week": {"full_name": "Waiver Day Of Week", "description": "Day of week for waivers."},
+      "playoff_round_type": {"full_name": "Playoff Round Type", "description": "Type of playoff rounds."},
+      "reserve_allow_out": {"full_name": "Reserve Allow Out", "description": "Allow out players on reserve."},
+      "reserve_allow_sus": {"full_name": "Reserve Allow Sus", "description": "Allow suspended players on reserve."},
+      "veto_show_votes": {"full_name": "Veto Show Votes", "description": "Show votes for veto."},
+      "trade_deadline": {"full_name": "Trade Deadline", "description": "Trade deadline week."},
+      "taxi_years": {"full_name": "Taxi Years", "description": "Number of years for taxi squad."},
+      "daily_waivers": {"full_name": "Daily Waivers", "description": "Daily waivers setting."},
+      "disable_trades": {"full_name": "Disable Trades", "description": "Whether trades are disabled."},
+      "pick_trading": {"full_name": "Pick Trading", "description": "Pick trading setting."},
+      "type": {"full_name": "Type", "description": "League type."},
+      "max_keepers": {"full_name": "Max Keepers", "description": "Maximum number of keepers."},
+      "waiver_type": {"full_name": "Waiver Type", "description": "Type of waivers."},
+      "max_subs": {"full_name": "Max Subs", "description": "Maximum number of subs."},
+      "league_average_match": {"full_name": "League Average Match", "description": "League average match setting."},
+      "trade_review_days": {"full_name": "Trade Review Days", "description": "Number of days for trade review."},
+      "bench_lock": {"full_name": "Bench Lock", "description": "Bench lock setting."},
+      "offseason_adds": {"full_name": "Offseason Adds", "description": "Number of offseason adds allowed."},
+      "leg": {"full_name": "Leg", "description": "Current leg of the season."},
+      "reserve_slots": {"full_name": "Reserve Slots", "description": "Number of reserve slots."},
+      "reserve_allow_cov": {"full_name": "Reserve Allow COVID", "description": "Allow COVID players on reserve."},
+      "daily_waivers_last_ran": {"full_name": "Daily Waivers Last Ran", "description": "Last time daily waivers ran."}
+    }
+  },
+  "avatar": {
+    "full_name": "Avatar",
+    "description": "The league's avatar image identifier."
+  },
+  "company_id": {
+    "full_name": "Company ID",
+    "description": "The company identifier, if applicable."
+  },
+  "shard": {
+    "full_name": "Shard",
+    "description": "The data shard or server identifier for the league."
+  },
+  "season": {
+    "full_name": "Season",
+    "description": "The season year for the league."
+  },
+  "season_type": {
+    "full_name": "Season Type",
+    "description": "The type of season (e.g., regular, playoffs)."
+  },
+  "sport": {
+    "full_name": "Sport",
+    "description": "The sport for the league (e.g., nfl)."
+  },
+  "scoring_settings": {
+    "full_name": "Scoring Settings",
+    "description": "Scoring rules and point values for the league.",
+    "keys": {
+      "sack": {"full_name": "Sack", "description": "Points per sack."},
+      "fgm_40_49": {"full_name": "Field Goals Made 40-49 Yards", "description": "Points for field goals made from 40-49 yards."},
+      "bonus_rec_te": {"full_name": "Bonus Reception TE", "description": "Bonus points for tight end receptions."},
+      "pass_int": {"full_name": "Passing Interception", "description": "Points for passing interceptions (usually negative)."},
+      "fgmiss_50p": {"full_name": "Field Goal Missed 50+ Yards", "description": "Points for missed field goals from 50+ yards."},
+      "pts_allow_0": {"full_name": "Points Allowed 0", "description": "Points for allowing 0 points."},
+      "pass_2pt": {"full_name": "Passing 2-Point Conversion", "description": "Points for passing 2-point conversions."},
+      "yds_allow_450_499": {"full_name": "Yards Allowed 450-499", "description": "Points for allowing 450-499 yards."},
+      "st_td": {"full_name": "Special Teams Touchdown", "description": "Points for special teams touchdowns."},
+      "rec_td": {"full_name": "Receiving Touchdown", "description": "Points for receiving touchdowns."},
+      "fgm_30_39": {"full_name": "Field Goals Made 30-39 Yards", "description": "Points for field goals made from 30-39 yards."},
+      "xpmiss": {"full_name": "Extra Point Missed", "description": "Points for missed extra points."},
+      "rush_td": {"full_name": "Rushing Touchdown", "description": "Points for rushing touchdowns."},
+      "yds_allow_550p": {"full_name": "Yards Allowed 550+", "description": "Points for allowing 550 or more yards."},
+      "rec_2pt": {"full_name": "Receiving 2-Point Conversion", "description": "Points for receiving 2-point conversions."},
+      "pass_int_td": {"full_name": "Passing Interception Touchdown", "description": "Points for interception touchdowns thrown."},
+      "st_fum_rec": {"full_name": "Special Teams Fumble Recovery", "description": "Points for special teams fumble recoveries."},
+      "fgmiss": {"full_name": "Field Goal Missed", "description": "Points for missed field goals."},
+      "ff": {"full_name": "Forced Fumble", "description": "Points for forced fumbles."},
+      "fgmiss_30_39": {"full_name": "Field Goal Missed 30-39 Yards", "description": "Points for missed field goals from 30-39 yards."},
+      "rec": {"full_name": "Reception", "description": "Points per reception."},
+      "pts_allow_14_20": {"full_name": "Points Allowed 14-20", "description": "Points for allowing 14-20 points."},
+      "fgm_0_19": {"full_name": "Field Goals Made 0-19 Yards", "description": "Points for field goals made from 0-19 yards."},
+      "int": {"full_name": "Interception", "description": "Points for interceptions made."},
+      "def_st_fum_rec": {"full_name": "Defense/Special Teams Fumble Recovery", "description": "Points for defense or special teams fumble recoveries."},
+      "fum_lost": {"full_name": "Fumble Lost", "description": "Points for lost fumbles (usually negative)."},
+      "pts_allow_1_6": {"full_name": "Points Allowed 1-6", "description": "Points for allowing 1-6 points."},
+      "fgmiss_20_29": {"full_name": "Field Goal Missed 20-29 Yards", "description": "Points for missed field goals from 20-29 yards."},
+      "rush_att": {"full_name": "Rushing Attempt", "description": "Points per rushing attempt."},
+      "fgm_20_29": {"full_name": "Field Goals Made 20-29 Yards", "description": "Points for field goals made from 20-29 yards."},
+      "yds_allow_500_549": {"full_name": "Yards Allowed 500-549", "description": "Points for allowing 500-549 yards."},
+      "pts_allow_21_27": {"full_name": "Points Allowed 21-27", "description": "Points for allowing 21-27 points."},
+      "xpm": {"full_name": "Extra Point Made", "description": "Points for made extra points."},
+      "fgmiss_0_19": {"full_name": "Field Goal Missed 0-19 Yards", "description": "Points for missed field goals from 0-19 yards."},
+      "rush_2pt": {"full_name": "Rushing 2-Point Conversion", "description": "Points for rushing 2-point conversions."},
+      "fum_rec": {"full_name": "Fumble Recovery", "description": "Points for fumble recoveries."},
+      "def_st_td": {"full_name": "Defense/Special Teams Touchdown", "description": "Points for defense or special teams touchdowns."},
+      "fgm_50p": {"full_name": "Field Goals Made 50+ Yards", "description": "Points for field goals made from 50+ yards."},
+      "def_td": {"full_name": "Defensive Touchdown", "description": "Points for defensive touchdowns."},
+      "safe": {"full_name": "Safety", "description": "Points for safeties."},
+      "fgmiss_40_49": {"full_name": "Field Goal Missed 40-49 Yards", "description": "Points for missed field goals from 40-49 yards."},
+      "blk_kick": {"full_name": "Blocked Kick", "description": "Points for blocked kicks."},
+      "yds_allow_100_199": {"full_name": "Yards Allowed 100-199", "description": "Points for allowing 100-199 yards."},
+      "yds_allow_0_100": {"full_name": "Yards Allowed 0-100", "description": "Points for allowing 0-100 yards."},
+      "fum": {"full_name": "Fumble", "description": "Points for fumbles (usually negative)."},
+      "pts_allow_28_34": {"full_name": "Points Allowed 28-34", "description": "Points for allowing 28-34 points."},
+      "pts_allow_35p": {"full_name": "Points Allowed 35+", "description": "Points for allowing 35 or more points."},
+      "fum_rec_td": {"full_name": "Fumble Recovery Touchdown", "description": "Points for fumble recovery touchdowns."},
+      "def_st_ff": {"full_name": "Defense/Special Teams Forced Fumble", "description": "Points for defense or special teams forced fumbles."},
+      "pts_allow_7_13": {"full_name": "Points Allowed 7-13", "description": "Points for allowing 7-13 points."},
+      "st_ff": {"full_name": "Special Teams Forced Fumble", "description": "Points for special teams forced fumbles."},
+      "pass_yd": {"full_name": "Passing Yards", "description": "Points per passing yard."},
+      "pass_td": {"full_name": "Passing Touchdown", "description": "Points per passing touchdown."},
+      "rush_yd": {"full_name": "Rushing Yards", "description": "Points per rushing yard."},
+      "rec_yd": {"full_name": "Receiving Yards", "description": "Points per receiving yard."}
+    }
+  },
+  "last_message_id": {
+    "full_name": "Last Message ID",
+    "description": "The ID of the last message in the league chat."
+  },
+  "last_author_avatar": {
+    "full_name": "Last Author Avatar",
+    "description": "Avatar of the last message author."
+  },
+  "last_author_display_name": {
+    "full_name": "Last Author Display Name",
+    "description": "Display name of the last message author."
+  },
+  "last_author_id": {
+    "full_name": "Last Author ID",
+    "description": "User ID of the last message author."
+  },
+  "last_author_is_bot": {
+    "full_name": "Last Author Is Bot",
+    "description": "Whether the last message author is a bot."
+  },
+  "last_message_attachment": {
+    "full_name": "Last Message Attachment",
+    "description": "Attachment of the last message, if any."
+  },
+  "last_message_text_map": {
+    "full_name": "Last Message Text Map",
+    "description": "Text map of the last message, if any."
+  },
+  "last_message_time": {
+    "full_name": "Last Message Time",
+    "description": "Timestamp of the last message in the league chat."
+  },
+  "last_pinned_message_id": {
+    "full_name": "Last Pinned Message ID",
+    "description": "ID of the last pinned message in the league chat."
+  },
+  "last_read_id": {
+    "full_name": "Last Read ID",
+    "description": "ID of the last read message in the league chat."
+  },
+  "draft_id": {
+    "full_name": "Draft ID",
+    "description": "Identifier for the league's draft."
+  },
+  "league_id": {
+    "full_name": "League ID",
+    "description": "Unique identifier for the league."
+  },
+  "previous_league_id": {
+    "full_name": "Previous League ID",
+    "description": "Identifier for the previous season's league."
+  },
+  "roster_positions": {
+    "full_name": "Roster Positions",
+    "description": "List of roster positions for the league."
+  },
+  "bracket_id": {
+    "full_name": "Bracket ID",
+    "description": "Identifier for the playoff bracket."
+  },
+  "bracket_overrides_id": {
+    "full_name": "Bracket Overrides ID",
+    "description": "Identifier for any playoff bracket overrides."
+  },
+  "group_id": {
+    "full_name": "Group ID",
+    "description": "Group identifier, if applicable."
+  },
+  "loser_bracket_id": {
+    "full_name": "Loser Bracket ID",
+    "description": "Identifier for the loser's bracket."
+  },
+  "loser_bracket_overrides_id": {
+    "full_name": "Loser Bracket Overrides ID",
+    "description": "Identifier for any loser's bracket overrides."
+  },
+  "total_rosters": {
+    "full_name": "Total Rosters",
+    "description": "Total number of rosters in the league."
+  }
+}

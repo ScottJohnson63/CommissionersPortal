@@ -1,53 +1,206 @@
 {
-  "daily_waivers_last_ran": {"full_name": "Daily Waivers Last Ran", "description": "The last time daily waivers were processed."},
-  "offseason_adds": {"full_name": "Offseason Adds", "description": "Number of adds allowed in the offseason."},
-  "trade_review_days": {"full_name": "Trade Review Days", "description": "Number of days for trade review period."},
-  "reserve_allow_cov": {"full_name": "Reserve Allow COVID", "description": "Whether COVID reserve spots are allowed."},
-  "taxi_slots": {"full_name": "Taxi Slots", "description": "Number of taxi squad slots available."},
-  "best_ball": {"full_name": "Best Ball", "description": "<add a description>"},
-  "last_report": {"full_name": "Last Report", "description": "<add a description>"},
-  "waiver_budget": {"full_name": "Waiver Budget", "description": "<add a description>"},
-  "disable_adds": {"full_name": "Disable Adds", "description": "<add a description>"},
-  "divisions": {"full_name": "Divisions", "description": "<add a description>"},
-  "capacity_override": {"full_name": "Capacity Override", "description": "<add a description>"},
-  "waiver_bid_min": {"full_name": "Waiver Bid Min", "description": "<add a description>"},
-  "taxi_deadline": {"full_name": "Taxi Deadline", "description": "<add a description>"},
-  "draft_rounds": {"full_name": "Draft Rounds", "description": "<add a description>"},
-  "reserve_allow_na": {"full_name": "Reserve Allow NA", "description": "<add a description>"},
-  "start_week": {"full_name": "Start Week", "description": "<add a description>"},
-  "playoff_seed_type": {"full_name": "Playoff Seed Type", "description": "<add a description>"},
-  "playoff_teams": {"full_name": "Playoff Teams", "description": "<add a description>"},
-  "veto_votes_needed": {"full_name": "Veto Votes Needed", "description": "<add a description>"},
-  "squads": {"full_name": "Squads", "description": "<add a description>"},
-  "num_teams": {"full_name": "Num Teams", "description": "<add a description>"},
-  "daily_waivers_hour": {"full_name": "Daily Waivers Hour", "description": "<add a description>"},
-  "playoff_type": {"full_name": "Playoff Type", "description": "<add a description>"},
-  "sub_start_time_eligibility": {"full_name": "Sub Start Time Eligibility", "description": "<add a description>"},
-  "last_scored_leg": {"full_name": "Last Scored Leg", "description": "<add a description>"},
-  "daily_waivers_days": {"full_name": "Daily Waivers Days", "description": "<add a description>"},
-  "playoff_week_start": {"full_name": "Playoff Week Start", "description": "<add a description>"},
-  "waiver_clear_days": {"full_name": "Waiver Clear Days", "description": "<add a description>"},
-  "reserve_allow_doubtful": {"full_name": "Reserve Allow Doubtful", "description": "<add a description>"},
-  "commissioner_direct_invite": {"full_name": "Commissioner Direct Invite", "description": "<add a description>"},
-  "veto_auto_poll": {"full_name": "Veto Auto Poll", "description": "<add a description>"},
-  "reserve_allow_dnr": {"full_name": "Reserve Allow DNR", "description": "<add a description>"},
-  "taxi_allow_vets": {"full_name": "Taxi Allow Vets", "description": "<add a description>"},
-  "waiver_day_of_week": {"full_name": "Waiver Day Of Week", "description": "<add a description>"},
-  "playoff_round_type": {"full_name": "Playoff Round Type", "description": "<add a description>"},
-  "reserve_allow_out": {"full_name": "Reserve Allow Out", "description": "<add a description>"},
-  "reserve_allow_sus": {"full_name": "Reserve Allow Sus", "description": "<add a description>"},
-  "veto_show_votes": {"full_name": "Veto Show Votes", "description": "<add a description>"},
-  "trade_deadline": {"full_name": "Trade Deadline", "description": "<add a description>"},
-  "taxi_years": {"full_name": "Taxi Years", "description": "<add a description>"},
-  "daily_waivers": {"full_name": "Daily Waivers", "description": "<add a description>"},
-  "disable_trades": {"full_name": "Disable Trades", "description": "<add a description>"},
-  "pick_trading": {"full_name": "Pick Trading", "description": "<add a description>"},
-  "type": {"full_name": "Type", "description": "<add a description>"},
-  "max_keepers": {"full_name": "Max Keepers", "description": "<add a description>"},
-  "waiver_type": {"full_name": "Waiver Type", "description": "<add a description>"},
-  "max_subs": {"full_name": "Max Subs", "description": "<add a description>"},
-  "league_average_match": {"full_name": "League Average Match", "description": "<add a description>"},
-  "bench_lock": {"full_name": "Bench Lock", "description": "<add a description>"},
-  "leg": {"full_name": "Leg", "description": "<add a description>"},
-  "reserve_slots": {"full_name": "Reserve Slots", "description": "<add a description>"}
+  "daily_waivers_last_ran": {
+    "full_name": "Daily Waivers Last Ran",
+    "description": "The last time daily waivers were processed."
+  },
+  "offseason_adds": {
+    "full_name": "Offseason Adds",
+    "description": "Number of adds allowed in the offseason."
+  },
+  "trade_review_days": {
+    "full_name": "Trade Review Days",
+    "description": "Number of days for trade review period."
+  },
+  "reserve_allow_cov": {
+    "full_name": "Reserve Allow COVID",
+    "description": "Whether COVID reserve spots are allowed."
+  },
+  "taxi_slots": {
+    "full_name": "Taxi Slots",
+    "description": "Number of taxi squad slots available."
+  },
+  "best_ball": {
+    "full_name": "Best Ball",
+    "description": "<add a description>"
+  },
+  "last_report": {
+    "full_name": "Last Report",
+    "description": "<add a description>"
+  },
+  "waiver_budget": {
+    "full_name": "Waiver Budget",
+    "description": "<add a description>"
+  },
+  "disable_adds": {
+    "full_name": "Disable Adds",
+    "description": "<add a description>"
+  },
+  "divisions": {
+    "full_name": "Divisions",
+    "description": "<add a description>"
+  },
+  "capacity_override": {
+    "full_name": "Capacity Override",
+    "description": "<add a description>"
+  },
+  "waiver_bid_min": {
+    "full_name": "Waiver Bid Min",
+    "description": "<add a description>"
+  },
+  "taxi_deadline": {
+    "full_name": "Taxi Deadline",
+    "description": "<add a description>"
+  },
+  "draft_rounds": {
+    "full_name": "Draft Rounds",
+    "description": "<add a description>"
+  },
+  "reserve_allow_na": {
+    "full_name": "Reserve Allow NA",
+    "description": "<add a description>"
+  },
+  "start_week": {
+    "full_name": "Start Week",
+    "description": "<add a description>"
+  },
+  "playoff_seed_type": {
+    "full_name": "Playoff Seed Type",
+    "description": "<add a description>"
+  },
+  "playoff_teams": {
+    "full_name": "Playoff Teams",
+    "description": "<add a description>"
+  },
+  "veto_votes_needed": {
+    "full_name": "Veto Votes Needed",
+    "description": "<add a description>"
+  },
+  "squads": {
+    "full_name": "Squads",
+    "description": "<add a description>"
+  },
+  "num_teams": {
+    "full_name": "Num Teams",
+    "description": "<add a description>"
+  },
+  "daily_waivers_hour": {
+    "full_name": "Daily Waivers Hour",
+    "description": "<add a description>"
+  },
+  "playoff_type": {
+    "full_name": "Playoff Type",
+    "description": "<add a description>"
+  },
+  "sub_start_time_eligibility": {
+    "full_name": "Sub Start Time Eligibility",
+    "description": "<add a description>"
+  },
+  "last_scored_leg": {
+    "full_name": "Last Scored Leg",
+    "description": "<add a description>"
+  },
+  "daily_waivers_days": {
+    "full_name": "Daily Waivers Days",
+    "description": "<add a description>"
+  },
+  "playoff_week_start": {
+    "full_name": "Playoff Week Start",
+    "description": "<add a description>"
+  },
+  "waiver_clear_days": {
+    "full_name": "Waiver Clear Days",
+    "description": "<add a description>"
+  },
+  "reserve_allow_doubtful": {
+    "full_name": "Reserve Allow Doubtful",
+    "description": "<add a description>"
+  },
+  "commissioner_direct_invite": {
+    "full_name": "Commissioner Direct Invite",
+    "description": "<add a description>"
+  },
+  "veto_auto_poll": {
+    "full_name": "Veto Auto Poll",
+    "description": "<add a description>"
+  },
+  "reserve_allow_dnr": {
+    "full_name": "Reserve Allow DNR",
+    "description": "<add a description>"
+  },
+  "taxi_allow_vets": {
+    "full_name": "Taxi Allow Vets",
+    "description": "<add a description>"
+  },
+  "waiver_day_of_week": {
+    "full_name": "Waiver Day Of Week",
+    "description": "<add a description>"
+  },
+  "playoff_round_type": {
+    "full_name": "Playoff Round Type",
+    "description": "<add a description>"
+  },
+  "reserve_allow_out": {
+    "full_name": "Reserve Allow Out",
+    "description": "<add a description>"
+  },
+  "reserve_allow_sus": {
+    "full_name": "Reserve Allow Sus",
+    "description": "<add a description>"
+  },
+  "veto_show_votes": {
+    "full_name": "Veto Show Votes",
+    "description": "<add a description>"
+  },
+  "trade_deadline": {
+    "full_name": "Trade Deadline",
+    "description": "<add a description>"
+  },
+  "taxi_years": {
+    "full_name": "Taxi Years",
+    "description": "<add a description>"
+  },
+  "daily_waivers": {
+    "full_name": "Daily Waivers",
+    "description": "<add a description>"
+  },
+  "disable_trades": {
+    "full_name": "Disable Trades",
+    "description": "<add a description>"
+  },
+  "pick_trading": {
+    "full_name": "Pick Trading",
+    "description": "<add a description>"
+  },
+  "type": {
+    "full_name": "Type",
+    "description": "<add a description>"
+  },
+  "max_keepers": {
+    "full_name": "Max Keepers",
+    "description": "<add a description>"
+  },
+  "waiver_type": {
+    "full_name": "Waiver Type",
+    "description": "<add a description>"
+  },
+  "max_subs": {
+    "full_name": "Max Subs",
+    "description": "<add a description>"
+  },
+  "league_average_match": {
+    "full_name": "League Average Match",
+    "description": "<add a description>"
+  },
+  "bench_lock": {
+    "full_name": "Bench Lock",
+    "description": "<add a description>"
+  },
+  "leg": {
+    "full_name": "Leg",
+    "description": "<add a description>"
+  },
+  "reserve_slots": {
+    "full_name": "Reserve Slots",
+    "description": "<add a description>"
+  }
 }

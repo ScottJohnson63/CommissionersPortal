@@ -1,18 +1,21 @@
 from functools import partial
 from lib.utils import make_request
 from lib.utils import load_config
-from lib.utils import load_descriptions
 import json
 import tkinter as tk
 import customtkinter as ctk
 from types import SimpleNamespace
 import os
 
+# New: Load results_keys_descriptions.json directly
+with open(os.path.join('conf', 'results_keys_descriptions.json'), encoding='utf-8') as f:
+    results_descriptions = json.load(f)
+
 class LeagueEditorPopup:
-    def __init__(self, result, config, descriptions):
+    def __init__(self, result, config):
         self.result = result
         self.config = config
-        self.descriptions = descriptions
+        self.descriptions = results_descriptions
         self.url = result.get('url')
         self.league_name = self.result.get('json', {}).get('name', 'Unknown League')
         ctk.set_appearance_mode("system")  # or "dark"/"light"
@@ -310,7 +313,6 @@ class LeagueEditorPopup:
 
 def main():
     config = load_config()
-    descriptions = load_descriptions()
     leagues = config.leagues
     ctk.set_appearance_mode("system")
     ctk.set_default_color_theme("blue")
@@ -325,7 +327,7 @@ def main():
         try:
             result = make_request(url)
             league_name = result.get('json', {}).get('name')
-            btn = ctk.CTkButton(main_frame, text=league_name, width=300, height=40, font=("Consolas", 14), command=partial(lambda r=result: LeagueEditorPopup(r, config, descriptions)))
+            btn = ctk.CTkButton(main_frame, text=league_name, width=300, height=40, font=("Consolas", 14), command=partial(lambda r=result: LeagueEditorPopup(r, config)))
             btn.pack(pady=8)
         except Exception as e:
             print(f"Error fetching {url}: {e}")
