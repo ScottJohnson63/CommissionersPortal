@@ -3,12 +3,9 @@ import json
 import os
 import requests
 from types import SimpleNamespace
+import sys
 
 CONFIG_FILE = 'config.json'
-
-# def load_config(file_path):
-#     with open(file_path, 'r') as f:
-#         return json.load(f)
 
 def make_request(url):
     """
@@ -36,7 +33,7 @@ def make_request(url):
         }
 
 def main():
-    config = load_configs()
+    config = load_config()
     leagues = config.leagues
     if not leagues:
         print('No leagues found in config file.')
@@ -47,6 +44,14 @@ def main():
         print(json.dumps(result, indent=2))
         print('-' * 40)
 
+def resource_path(relative_path):
+    """
+    Get the absolute path to a resource, works for both development and frozen (PyInstaller) modes.
+    """
+    if hasattr(sys, '_MEIPASS'):
+        return os.path.join(sys._MEIPASS, relative_path)
+    return os.path.join(os.path.abspath("."), relative_path)
+
 def get_config_dir():
     """
     Returns the directory where configuration files are stored.
@@ -55,9 +60,9 @@ def get_config_dir():
     return os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'conf'))
 
 # Use a relative path for the config directory and handle missing config files
-def load_configs():
-    config_dir = get_config_dir()
-    files = glob.glob(os.path.join(config_dir, '*.json'))
+def load_config():
+    config_dir = resource_path('conf')
+    files = glob.glob(os.path.join(config_dir, CONFIG_FILE))
     config = {}
     if not files:
         raise FileNotFoundError(f"No config files found in {config_dir}")
@@ -65,6 +70,21 @@ def load_configs():
         with open(file, 'r') as f:
             config.update(json.load(f))
     return json.loads(json.dumps(config), object_hook=lambda d:SimpleNamespace(**d)) # Convert to SimpleNamespace for easier attribute access
+
+def load_descriptions():
+    """
+    Loads setting and scoring descriptions from the config file.
+    Returns a dictionary with descriptions.
+    """
+    config_dir = get_config_dir()
+    description_files = glob.glob(os.path.join(config_dir, '*_descriptions.json'))
+    if not description_files:
+        raise FileNotFoundError(f"No description files found in {config_dir}")
+    descriptions = {}
+    for file in description_files:
+        with open(file, 'r') as f:
+            descriptions.update(json.load(f))
+    return descriptions
 
 if __name__ == '__main__':
     main()

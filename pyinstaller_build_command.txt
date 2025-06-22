@@ -1,0 +1,9 @@
+# PyInstaller build command for this project (Windows)
+
+pyinstaller --onefile --noconsole --hidden-import=requests --add-data "conf;conf" --add-data "lib;lib" --add-data "results;results" main.py
+
+# Notes:
+# - The --add-data option copies folders into the EXE bundle (use ; as separator on Windows).
+# - The --hidden-import=requests ensures requests is bundled.
+# - If you add more folders or data files, add more --add-data options as needed.
+# - Run this command from the root of your project directory.

@@ -1,0 +1,21 @@
+# How to package this Python script as an executable (EXE)
+
+1. Install PyInstaller (only needs to be done once):
+   pip install pyinstaller
+
+2. Open a terminal in this project directory.
+
+3. Run the following command to build the EXE:
+   pyinstaller --onefile --noconsole main.py
+
+   - The --onefile flag creates a single EXE file.
+   - The --noconsole flag hides the terminal window (for GUI apps).
+
+4. The EXE will be created in the `dist` folder as `main.exe`.
+
+5. To run the app, double-click `dist/main.exe` or distribute that file.
+
+# Notes
+- Make sure all dependencies in requirements.txt are installed in your environment before building.
+- If you use images or other data files, you may need to add them with the --add-data option.
+- If you encounter issues with missing DLLs or modules, consult the PyInstaller documentation for troubleshooting.
