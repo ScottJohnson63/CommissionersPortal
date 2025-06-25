@@ -1,0 +1,17 @@
+{
+    "games_per_week": 5,
+    "num_weeks": 13,
+    "max_retries": 5000,
+    "division": [
+        "Lions",
+        "Tigers",
+        "Bears",
+        "Wolves",
+        "Hawks",
+        "Sharks",
+        "Eagles",
+        "Dragons",
+        "Cobras",
+        "Panthers"
+    ]
+}

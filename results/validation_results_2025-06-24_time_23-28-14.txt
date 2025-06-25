@@ -1,0 +1,108 @@
+total_division_games: 59
+total_interdivision_games: 0
+individual_interdivision_games:
+  Lions: 0
+  Tigers: 0
+  Bears: 0
+  Wolves: 0
+  Hawks: 0
+  Sharks: 0
+  Eagles: 0
+  Dragons: 0
+  Cobras: 0
+  Panthers: 0
+  Lions
+  Tigers
+  Bears
+  Wolves
+  Hawks
+  Sharks
+  Eagles
+  Dragons
+  Cobras
+  Panthers
+individual_intradivision_games:
+  Lions: 12
+  Tigers: 11
+  Bears: 11
+  Wolves: 11
+  Hawks: 13
+  Sharks: 13
+  Eagles: 11
+  Dragons: 12
+  Cobras: 13
+  Panthers: 11
+back_to_back: []
+
+Week 1:
+	Wolves vs Hawks
+	Cobras vs Sharks
+	Panthers vs Tigers
+	Eagles vs Lions
+	Dragons vs Bears
+Week 2:
+	Lions vs Tigers
+	Eagles vs Wolves
+	Panthers vs Hawks
+	Sharks vs Dragons
+	Bears vs Cobras
+Week 3:
+	Tigers vs Cobras
+	Sharks vs Panthers
+	Hawks vs Lions
+	Bears vs Dragons
+Week 4:
+	Sharks vs Tigers
+	Cobras vs Hawks
+	Panthers vs Lions
+	Wolves vs Eagles
+Week 5:
+	Dragons vs Hawks
+	Panthers vs Sharks
+	Tigers vs Lions
+	Cobras vs Eagles
+	Bears vs Wolves
+Week 6:
+	Cobras vs Dragons
+	Panthers vs Wolves
+	Tigers vs Eagles
+	Bears vs Lions
+	Sharks vs Hawks
+Week 7:
+	Dragons vs Sharks
+	Bears vs Tigers
+	Cobras vs Lions
+	Panthers vs Eagles
+	Hawks vs Wolves
+Week 8:
+	Eagles vs Dragons
+	Cobras vs Wolves
+	Lions vs Bears
+	Hawks vs Sharks
+	Tigers vs Panthers
+Week 9:
+	Hawks vs Dragons
+	Tigers vs Bears
+	Lions vs Panthers
+	Sharks vs Cobras
+Week 10:
+	Wolves vs Dragons
+	Bears vs Eagles
+	Hawks vs Cobras
+	Sharks vs Lions
+Week 11:
+	Wolves vs Tigers
+	Dragons vs Lions
+	Sharks vs Eagles
+	Hawks vs Bears
+	Panthers vs Cobras
+Week 12:
+	Hawks vs Tigers
+	Wolves vs Cobras
+	Sharks vs Bears
+	Dragons vs Eagles
+Week 13:
+	Cobras vs Panthers
+	Hawks vs Eagles
+	Lions vs Sharks
+	Dragons vs Wolves

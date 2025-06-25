@@ -1,0 +1,74 @@
+Week 1:
+	Cobras vs Eagles
+	Tigers vs Hawks
+	Bears vs Lions
+	Wolves vs Dragons
+	Panthers vs Sharks
+Week 2:
+	Panthers vs Wolves
+	Eagles vs Bears
+	Lions vs Hawks
+	Cobras vs Sharks
+	Tigers vs Dragons
+Week 3:
+	Dragons vs Eagles
+	Tigers vs Bears
+	Lions vs Cobras
+	Wolves vs Hawks
+	Sharks vs Panthers
+Week 4:
+	Dragons vs Hawks
+	Cobras vs Bears
+	Panthers vs Eagles
+	Tigers vs Sharks
+	Lions vs Wolves
+Week 5:
+	Eagles vs Dragons
+	Wolves vs Cobras
+	Tigers vs Lions
+	Bears vs Hawks
+Week 6:
+	Dragons vs Sharks
+	Eagles vs Panthers
+	Tigers vs Cobras
+	Wolves vs Lions
+Week 7:
+	Dragons vs Cobras
+	Panthers vs Tigers
+	Wolves vs Eagles
+	Lions vs Sharks
+	Hawks vs Bears
+Week 8:
+	Lions vs Dragons
+	Hawks vs Sharks
+	Bears vs Panthers
+	Cobras vs Tigers
+Week 9:
+	Cobras vs Dragons
+	Bears vs Sharks
+	Panthers vs Lions
+	Eagles vs Tigers
+	Hawks vs Wolves
+Week 10:
+	Panthers vs Dragons
+	Eagles vs Sharks
+	Lions vs Bears
+	Hawks vs Cobras
+	Wolves vs Tigers
+Week 11:
+	Dragons vs Tigers
+	Eagles vs Cobras
+	Bears vs Wolves
+	Sharks vs Hawks
+	Lions vs Panthers
+Week 12:
+	Sharks vs Tigers
+	Panthers vs Bears
+	Dragons vs Wolves
+	Hawks vs Eagles
+	Cobras vs Lions
+Week 13:
+	Bears vs Cobras
+	Wolves vs Panthers
+	Dragons vs Lions
+	Tigers vs Eagles

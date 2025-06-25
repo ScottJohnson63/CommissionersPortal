@@ -1,0 +1,12 @@
+{
+    "debug_mode": false,
+    "check_back_to_back": true,
+    "check_division_games": true,
+    "check_interdivision_games": true,
+    "check_individual_team_games": true,
+    "total_division_games": 45,
+    "total_interdivision_games": 20,
+    "individual_division_games": 8,
+    "individual_interdivision_games": 5,
+    "trigger_reschedule": false
+}

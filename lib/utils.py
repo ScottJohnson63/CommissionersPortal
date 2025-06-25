@@ -4,6 +4,8 @@ import os
 import requests
 from types import SimpleNamespace
 import sys
+from lib import leagueScheduler
+
 
 CONFIG_FILE = 'config.json'
 
@@ -88,3 +90,26 @@ def load_descriptions():
 
 if __name__ == '__main__':
     main()
+
+# Use a relative path for the config directory and handle missing config files
+def load_configs():
+    config_dir = get_config_dir()
+    files = glob.glob(os.path.join(config_dir, '*.json'))
+    config = {}
+    if not files:
+        raise FileNotFoundError(f"No config files found in {config_dir}")
+    for file in files:
+        with open(file, 'r') as f:
+            data = json.load(f)
+            if isinstance(data, dict):
+                config.update(data)
+            else:
+                print(f"Warning: Skipping non-dict JSON in {file} (type: {type(data)})")
+    return json.loads(json.dumps(config), object_hook=lambda d:SimpleNamespace(**d)) # Convert to SimpleNamespace for easier attribute access
+
+def load_scheduler_config():
+    config_dir = get_config_dir()
+    config_path = os.path.join(config_dir, 'scheduler_config.json')
+    with open(config_path, 'r', encoding='utf-8') as f:
+        config = json.load(f)
+    return json.loads(json.dumps(config), object_hook=lambda d: SimpleNamespace(**d))
