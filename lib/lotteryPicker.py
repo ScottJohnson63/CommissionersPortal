@@ -38,11 +38,22 @@ def open_lottery_picker(result, config, root):
         print(f"Error loading lotteryTeams.json: {e}")
         lottery_teams = []
 
+    # Load league-specific sounds from conf/lotterySounds.json
+    try:
+        with open(os.path.join('conf', 'lotterySounds.json'), encoding='utf-8') as f:
+            sound_config = json.load(f)
+    except Exception as e:
+        print(f"Error loading lotterySounds.json: {e}")
+        sound_config = {}
+
     def run_lottery():
-        # Play slot machine sound
+        # Play slot machine sound based on league name
         pygame.mixer.init()
-        spin_sound_path = os.path.join('assets', 'lotterySound.mp3')
-        winner_sound_path = os.path.join('assets', 'winnerWinner.mp3')
+        league_sounds = sound_config.get(league_name) or sound_config.get('default', {})
+        spin_sound_file = league_sounds.get('loading', 'lotteryLoading2.mp3')
+        winner_sound_file = league_sounds.get('winner', 'winnerWinner.mp3')
+        spin_sound_path = os.path.join('assets', spin_sound_file)
+        winner_sound_path = os.path.join('assets', winner_sound_file)
         spin_channel = None
         try:
             spin_sound = pygame.mixer.Sound(spin_sound_path)

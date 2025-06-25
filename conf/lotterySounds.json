@@ -1,0 +1,14 @@
+{
+  "Baby got Dak": {
+    "loading": "lotteryLoading2.mp3",
+    "winner": "winnerWinner.mp3"
+  },
+  "Meet The Watson’s": {
+    "loading": "lotteryLoading1.mp3",
+    "winner": "winnerWinner.mp3"
+  },
+  "default": {
+    "loading": "lotteryLoading2.mp3",
+    "winner": "winnerWinner.mp3"
+  }
+}
