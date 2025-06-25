@@ -339,6 +339,14 @@ def format_schedule(schedule):
         lines.append(str(schedule))
     return "\n".join(lines)
 
+def generate_schedule_backend(config):
+    # Extracted backend logic from leagueScheduler.py (no UI)
+    from lib import leagueScheduler, utils
+    # This is a placeholder; replace with actual scheduling logic
+    # Example: schedule = leagueScheduler.generate_schedule(config)
+    schedule = {'week1': [('Team A', 'Team B'), ('Team C', 'Team D')]}
+    return schedule
+
 if __name__ == "__main__":
     config = utils.load_scheduler_config()
     schedule = build_schedule(config)

@@ -283,3 +283,8 @@ class LeagueEditorPopup:
 
         save_btn.configure(command=save_changes)
         show_item()
+
+def review_league_backend(result, config):
+    # Placeholder for backend review logic (from leagueReviewer.py)
+    # Example: return leagueReviewer.review(result, config)
+    return {'reviewed': True, 'result': result, 'config': config}

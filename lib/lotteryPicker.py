@@ -97,3 +97,29 @@ def open_lottery_picker(result, config, root):
         ctk.CTkButton(popup, text="Close", command=popup.destroy).pack(pady=20)
 
     threading.Thread(target=run_lottery, daemon=True).start()
+
+def run_lottery_backend(league_name):
+    # Extracted backend logic from lotteryPicker.py (no UI)
+    import random
+    import json
+    import os
+    # Load team names
+    try:
+        with open(os.path.join('conf', 'lotteryTeams.json'), encoding='utf-8') as f:
+            lottery_teams = json.load(f)
+    except Exception:
+        lottery_teams = []
+    # Simulate lottery
+    results = {1: 0, 2: 0, 3: 0}
+    total = 100_000
+    for i in range(1, total + 1):
+        pick = random.randint(1, 3)
+        results[pick] += 1
+    winner_num = max(results, key=results.get)
+    team_name = None
+    if lottery_teams and len(lottery_teams) >= winner_num:
+        team = lottery_teams[winner_num - 1]
+        team_name = team.get('name') if isinstance(team, dict) else str(team)
+    if not team_name:
+        team_name = f"Team {winner_num}"
+    return {'winner': team_name, 'results': results}

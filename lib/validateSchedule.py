@@ -201,6 +201,13 @@ def format_validation_results(validation_results):
 
     return "\n".join(lines)
 
+def validate_schedule_backend(schedule, config):
+    # Extracted backend logic from validateSchedule.py (no UI)
+    # This is a placeholder; replace with actual validation logic
+    # Example: results = validateSchedule.validate(schedule, config)
+    results = {'valid': True, 'issues': []}
+    return results
+
 if __name__ == "__main__":
     config = utils.load_configs()
     results = build_validation_results(config=config)

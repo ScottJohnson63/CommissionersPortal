@@ -1,0 +1,2 @@
+// This file will be loaded by the client League Reviewer for key descriptions.
+// The actual content will be loaded from conf/results_keys_descriptions.json at runtime.
