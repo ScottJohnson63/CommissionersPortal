@@ -2,6 +2,8 @@
   "leagues": [
     "https://api.sleeper.app/v1/league/1124857730129989632", 
     "https://api.sleeper.app/v1/league/1124830553342771200", 
-    "https://api.sleeper.app/v1/league/1124813767490686976"
+    "https://api.sleeper.app/v1/league/1124813767490686976",
+    "https://api.sleeper.app/v1/league/1242719304307187712",
+    "https://api.sleeper.app/v1/league/1242735765360738304"
   ]
 }
